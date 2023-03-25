@@ -1,14 +1,14 @@
 import React from "react";
+import ExpenseDate from "./ExpenseDate";
 
-const ExpenseModule = () => {
-  let title = "Home loan";
+const ExpenseModule = (props) => {
   return (
     <>
       <div className="expense-item">
-        <div>March 2023,23</div>
+        <ExpenseDate Date={props.Date} />
         <div className="expense-item_description">
-          <h2>{title}</h2>
-          <div className="expense-item_price">RS.15000</div>
+          <h2>{props.item}</h2>
+          <div className="expense-item_price">{props.amount}</div>
         </div>
       </div>
     </>
