@@ -38,7 +38,7 @@ const TransactionCell = (props) => {
   return (
     <Cell isExpense={props.payload?.type === "EXPENSE"}>
       <span>{props.payload?.desc}</span>
-      <span>${props.payload?.amount}</span>
+      <span>₹{props.payload?.amount}</span>
     </Cell>
   );
 };
